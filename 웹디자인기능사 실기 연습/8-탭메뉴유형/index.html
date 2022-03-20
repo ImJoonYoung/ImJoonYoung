@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>산업대학교</title>
+      <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    </head>
+    <body>
+        <div class="wrap clearfix">
+            <header class="clearfix">
+                <h1 class="logo"><a href="#">
+                    로고
+                </a>
+                </h1>
+                <nav class="clearfix">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                MENU-1
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">
+                                    submenu01
+                                </a></li>
+                                <li><a href="#">
+                                    submenu02
+                                </a></li>
+                                <li><a href="#">
+                                    submenu03
+                                </a></li>
+                                <li><a href="#">
+                                    submenu04
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                MENU-2
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">
+                                    submenu01
+                                </a></li>
+                                <li><a href="#">
+                                    submenu02
+                                </a></li>
+                                <li><a href="#">
+                                    submenu03
+                                </a></li>
+                                <li><a href="#">
+                                    submenu04
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                MENU-3
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">
+                                    submenu01
+                                </a></li>
+                                <li><a href="#">
+                                    submenu02
+                                </a></li>
+                                <li><a href="#">
+                                    submenu03
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                MENU-4
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">
+                                    submenu01
+                                </a></li>
+                                <li><a href="#">
+                                    submenu02
+                                </a></li>
+                                <li><a href="#">
+                                    submenu03
+                                </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- header -->
+            <section class="banner">
+                <h2>이미지 슬라이드</h2>
+            </section>
+            <!-- banner -->
+            <section class="main clearfix">
+                <div class="con1">
+                    <div class="tab-menu">
+                        <div class="tab-btn">
+                            <ul class="clearfix">
+                                <li class="active">
+                                    <a href="#">
+                                        공지사항1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        공지사항2
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-con">
+                                <div>
+                                <p>공지사항1-1</p>
+                                <p>공지사항1-2</p>
+                                <p>공지사항1-3</p>
+                                <p>공지사항1-4</p>
+                                </div>
+
+                                <div>
+                                    <p>공지사항2-1</p>
+                                    <p>공지사항2-2</p>
+                                    <p>공지사항2-3</p>
+                                    <p>공지사항2-4</p>
+                                </div>
+                        </div>
+                    </div><!-- tab-menu -->
+                </div>
+
+                <div class="con2">
+                    <h3>갤러리</h3>
+                </div>
+
+                <div class="con3">
+                    <h3>팝업</h3>
+                </div>
+                
+            </section>
+            <!-- main -->
+            <footer cleafix>
+                <div class="foo01">
+                    <h3>로고</h3>
+                </div>
+                <div class="foo02">
+                    <h3>copyright</h3>
+                </div>
+                <div class="foo03">
+                    <h3>SNS</h3>
+                </div>
+            </footer>
+            <!-- footer -->
+        </div><!-- wrap -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+
+        </script>
+        <script>
+            $("header nav > ul > li").mouseover(function(){
+                $(this).find(".submenu").stop().slideDown(200);
+            });
+            $("header nav > ul > li").mouseout(function(){
+                $(this).find(".submenu").stop().slideUp(200);
+            });
+
+            var tabBtn = $(".tab-btn > ul > li");
+            var tabCon = $(".tab-con > div");
+
+
+            tabCon.hide().eq(0).show();
+            
+            tabBtn.click(function(e){
+                e.preventDefault();
+                var target = $(this);
+                var index = target.index();
+                tabBtn.removeClass("active");
+                target.addClass("active");
+                tabCon.css("display","none");
+                tabCon.eq(index).css("display","block");
+            });
+        </script>
+    </body>
+</html>

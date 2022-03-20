@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, shrink-to-fit=no"/>
+    <meta name="keywords" content=" "/>
+    <meta name="description" content=" "/>
+    <title>산업대학교</title>
+    <link rel="stylesheet" href="./css/index.css" type="text/css"/>
+</head>
+<body>
+    <div class="wrap clearfix">
+        <aside class="left clearfix">
+        <header>
+            <h2 class="screen_out"><!-- left --></h2>
+            <h1 class="logo">로고</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        Menu1
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">
+                                SubMenu01
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SubMenu02
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SubMenu03
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Menu2
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">
+                                SubMenu01
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SubMenu02
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SubMenu03
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Menu3
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">
+                                SubMenu01
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SubMenu02
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SubMenu03
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Menu4
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">
+                                SubMenu01
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SubMenu02
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SubMenu03
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </aside>
+        <!-- aside -->
+        <section class="right">
+            <section class="banner">
+                <h2>이미지 슬라이드</h2>
+            </section>
+            <!-- banner -->
+
+            <section class="content clearfix">
+            <div class="con1"><h3>공지사항</h3></div>
+            <div class="con2"><h3>갤러리</h3></div>
+            <div class="con3"><h3>팝업</h3></div>
+            </section>
+            <!-- content -->
+            <footer class="clearfix">
+                <div class="foo_left">
+                    <h3 class="logo">
+                     로고
+                    </h3>
+                </div> <!-- foo_left -->
+
+                <div class="foo_right">
+                    <section class="submenu">
+                        <h3>하단 메뉴</h3>
+                    </section>
+
+                    <section class="copyright">
+                        <h3>Copyright</h3>
+                    </section>
+                </div>
+                <!-- foo_right -->
+            </footer>
+            <!-- footer -->
+        </section>
+        <!-- right -->
+    </div>
+    <!-- wrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $("nav > ul > li").hover(function(){
+            $(this).find(".submenu").stop().slideDown(200);
+        },function(){
+            $(this).find(".submenu").stop().slideUp(200);
+        })
+    </script>
+</body>
+</html>

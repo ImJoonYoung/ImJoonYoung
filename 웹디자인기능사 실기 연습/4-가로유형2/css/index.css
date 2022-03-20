@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.clearfix::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+.screen_out{
+    position: absolute;
+    top:-9999em;
+    left:-9999em;
+}
+
+/* layout */
+
+.wrap{
+    width:1200px;
+    margin:0 auto;
+}
+
+header{
+    width:100%;
+    height:100px;
+    background:purple;
+}
+
+.slide{
+    width:100%;
+    height:700px;
+    background: lightpink;
+    text-align: center;
+    line-height: 700px;
+}
+
+.main{
+    width:100%;
+    height:300px;
+    background:plum;
+}
+
+footer{
+    width:100%;
+    height:100px;
+    background:palevioletred;
+}
+
+/* logo */
+.logo{
+    float:left;
+    width:300px;
+    height:100%;
+    background: pink;
+    text-align: center;
+    line-height: 100px;
+}
+
+.logo>h1>a{
+    display: block;
+    width:100%;
+    height:100%;
+    color:#fff;
+}
+
+/* nav */
+
+header nav{
+    width:600px;
+    float:right;
+    background:powderblue;
+    margin-top:30px;
+}
+
+header nav li{
+    position: relative;
+    width:25%;
+    float:left;
+    background:royalblue;
+    text-align: center;
+}
+
+header nav li a{
+    display: block;
+    width:100%;
+    height: 100%;
+    padding:10px;
+    color:#fff;
+}
+
+header nav li a:hover{
+    background:rgba(0,0,0,0.4);
+}
+
+header nav li .submenu{
+    display: none;
+    position:absolute;
+    left:0;
+    top:100%;
+    width:100%;
+}
+
+header nav li .submenu li{
+    width:100%;
+}
+
+/* .slide */
+
+.slide h2{
+    color:#fff;
+}
+
+/* .main */
+
+.main>ul{
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 300px;
+}
+
+.main li{
+    width:33.333333%;
+    height:100%;
+    float:left;
+    background:peru;
+}
+
+.main li:nth-child(2){
+    background:palevioletred;
+}
+
+.main li:last-child{
+    background:peachpuff;
+}
+
+.main li a{
+    display: block;
+    color:#fff;
+    font-size:20px;
+}
+
+/* footer */
+
+footer>ul{
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height:100px;
+}
+
+footer>ul>li{
+    height:100%;
+    float:left;
+}
+
+footer>ul>li:nth-child(1){
+    width:200px;
+    background:lightsalmon;
+}
+
+footer>ul>li:nth-child(2){
+    width:800px;
+    background:lightgrey;
+}
+
+footer>ul>li:last-child{
+    width:200px;
+    background:lightgreen;
+}
+
+footer>ul>li>a{
+    display: block;
+    width:100%;
+    height: 100%;
+    color:#fff;
+    font-size:18px;
+}
